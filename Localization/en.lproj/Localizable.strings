@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Localization
+
+  Created by MahdiHanifeh on 3/28/1401 AP.
+  
+*/
+
+"Text1"="Hello";
+"Text2"="Wellcom Here";
+"Text3" = "Change Language";

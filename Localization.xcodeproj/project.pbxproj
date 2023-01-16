@@ -11,6 +11,8 @@
 		4C69D61B285DBCEF001A0995 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C69D61A285DBCEF001A0995 /* ContentView.swift */; };
 		4C69D61D285DBCF1001A0995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C69D61C285DBCF1001A0995 /* Assets.xcassets */; };
 		4C69D620285DBCF1001A0995 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C69D61F285DBCF1001A0995 /* Preview Assets.xcassets */; };
+		4C69D628285DED3E001A0995 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C69D62A285DED3E001A0995 /* Localizable.strings */; };
+		4C69D62E285DF0A0001A0995 /* LanguageManagerSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4C69D62D285DF0A0001A0995 /* LanguageManagerSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		4C69D61A285DBCEF001A0995 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4C69D61C285DBCF1001A0995 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C69D61F285DBCF1001A0995 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4C69D629285DED3E001A0995 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4C69D62B285DED40001A0995 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C69D62E285DF0A0001A0995 /* LanguageManagerSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +60,7 @@
 				4C69D61A285DBCEF001A0995 /* ContentView.swift */,
 				4C69D61C285DBCF1001A0995 /* Assets.xcassets */,
 				4C69D61E285DBCF1001A0995 /* Preview Content */,
+				4C69D62A285DED3E001A0995 /* Localizable.strings */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -83,6 +89,9 @@
 			dependencies = (
 			);
 			name = Localization;
+			packageProductDependencies = (
+				4C69D62D285DF0A0001A0995 /* LanguageManagerSwiftUI */,
+			);
 			productName = Localization;
 			productReference = 4C69D615285DBCEF001A0995 /* Localization.app */;
 			productType = "com.apple.product-type.application";
@@ -109,8 +118,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 4C69D60C285DBCEF001A0995;
+			packageReferences = (
+				4C69D62C285DF0A0001A0995 /* XCRemoteSwiftPackageReference "LanguageManager-SwiftUI" */,
+			);
 			productRefGroup = 4C69D616285DBCEF001A0995 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C69D620285DBCF1001A0995 /* Preview Assets.xcassets in Resources */,
+				4C69D628285DED3E001A0995 /* Localizable.strings in Resources */,
 				4C69D61D285DBCF1001A0995 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +157,18 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C69D62A285DED3E001A0995 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C69D629285DED3E001A0995 /* en */,
+				4C69D62B285DED40001A0995 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4C69D621285DBCF1001A0995 /* Debug */ = {
@@ -339,6 +365,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C69D62C285DF0A0001A0995 /* XCRemoteSwiftPackageReference "LanguageManager-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Abedalkareem/LanguageManager-SwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C69D62D285DF0A0001A0995 /* LanguageManagerSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C69D62C285DF0A0001A0995 /* XCRemoteSwiftPackageReference "LanguageManager-SwiftUI" */;
+			productName = LanguageManagerSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4C69D60D285DBCEF001A0995 /* Project object */;
 }

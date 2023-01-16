@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import LanguageManagerSwiftUI
 
 @main
 struct LocalizationApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LanguageManagerView(.deviceLanguage){
+                ContentView()
+             
+            }
+           
         }
     }
 }
